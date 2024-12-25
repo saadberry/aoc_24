@@ -8,8 +8,7 @@ class Helper:
     """
 
     def __init__(self):
-        self.left = []
-        self.right = []
+        self.left, self.right = [], []
 
     def process_input(self):
         """
@@ -30,11 +29,12 @@ class Helper:
         Returns:
             - <dict>: Dict of left and right lists
         """
+        self.process_input()
         return {'left':self.left, 'right': self.right}
+
 
 
 if __name__ == "__main__":
     helper = Helper()
     result = helper.process_input()
     output = helper.get_lists()
-    print(f"result={output}")
