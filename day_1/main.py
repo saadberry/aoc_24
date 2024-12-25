@@ -11,8 +11,8 @@ class ReconcileLists:
         """
         Flow:
             - Sort lists
-            - Single pointer on each list, 
-            - Store difference in a new list
+            - Compute difference of respective elements in both lists
+            - Add that value to sum
             - Return sum of elements
         """
         lists = Helper().get_lists()
