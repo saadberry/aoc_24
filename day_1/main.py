@@ -5,10 +5,11 @@ from helper import Helper
 
 class Day1:
     """
-    Class that reconciles lists for the historians 
+    Class that helps alleviate historian hysteria 
     """
     def reconcile(self):
         """
+        Method that reconciles lists for the historians
         Flow:
             - Sort lists
             - Compute difference of respective elements in both lists
@@ -28,7 +29,7 @@ class Day1:
     
     def ComputeSimilarityScore(self):
         """
-        Class that computes similarity scores
+        Method that computes similarity scores
         Flow:
             - Fill a hash map of second list as: {'element': frequency}
             - Iterate through the first list, multiply the elements by their key in the hash map
@@ -51,3 +52,4 @@ class Day1:
             # Add result of product of element with their key in the hash map
             similarity_score += left[element] * (h_map[left[element]] if left[element] in h_map else 0)
         return similarity_score
+
